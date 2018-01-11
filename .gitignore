@@ -3,3 +3,5 @@ out
 *.iml
 .gradle
 .idea
+Chat-Logs.txt
+workingdir/users
