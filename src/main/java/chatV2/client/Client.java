@@ -69,7 +69,8 @@ public final class Client {
                 try {
                     Object receivedObject = protocol.receiveObject();
                     if (receivedObject instanceof Response) {
-                        for (OnDataReceivedListener listener : mOnDataReceivedListeners) {
+                        for (int i = 0; i < mOnDataReceivedListeners.size(); i++) {
+                            OnDataReceivedListener listener = mOnDataReceivedListeners.get(i);
                             if (!listener.onDataReceived(Client.this, (Response) receivedObject)) {
                                 isCorruptData = true;
                                 break;

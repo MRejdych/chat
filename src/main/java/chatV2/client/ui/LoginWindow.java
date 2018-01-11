@@ -28,7 +28,7 @@ public class LoginWindow extends ProcessingWindow implements ActionListener {
         getContentPane().setLayout(null);
 
         usernameField = new JTextField();
-        usernameField.setBounds(50, 50, 100, 20);
+        usernameField.setBounds(50, 50, 100, 26);
         usernameField.addActionListener(this);
         getContentPane().add(usernameField);
         usernameField.setColumns(10);

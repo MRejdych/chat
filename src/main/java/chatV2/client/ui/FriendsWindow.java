@@ -39,7 +39,7 @@ public class FriendsWindow extends Window implements OnDataReceivedListener, Act
         JScrollPane scrollPane = new JScrollPane(friendList);
         getContentPane().add(scrollPane);
 
-        setSize(300, 450);
+        setSize(200, 300);
     }
 
     public FriendsWindow() {
@@ -59,7 +59,7 @@ public class FriendsWindow extends Window implements OnDataReceivedListener, Act
                 ChatClient.showChatWindow(friend);
             else
                 MessageBox.showMessageBoxInUIThread(this,
-                        String.format("'%s' has gone! wait for him online then chatV2 again.", friend.getUserName())
+                        String.format("'%s' has gone! wait for him online then chat again.", friend.getUserName())
                 );
         }
     }
@@ -138,7 +138,7 @@ public class FriendsWindow extends Window implements OnDataReceivedListener, Act
         switch (requestCode) {
             case Request.CODE_CHAT_MESSAGE:
                 if (receivedObject.getExtra() instanceof Message) {
-                    System.out.println("+ Data: chatV2 message");
+                    System.out.println("+ Data: chat message");
                     Message message = (Message) receivedObject.getExtra();
                     ChatClient.showChatWindow(getAccountInfoById(message.getWhoId()));
                 }

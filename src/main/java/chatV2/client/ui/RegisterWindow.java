@@ -34,27 +34,27 @@ public class RegisterWindow extends ProcessingWindow implements ActionListener {
         panel.setLayout(null);
 
         JLabel lblUsername = new JLabel("Username:");
-        lblUsername.setBounds(129, 29, 77, 14);
+        lblUsername.setBounds(20, 60, 77, 14);
         panel.add(lblUsername);
 
         usernameField = new JTextField();
-        usernameField.setBounds(216, 26, 188, 20);
+        usernameField.setBounds(20, 80, 160, 26);
         panel.add(usernameField);
         usernameField.requestFocus();
         usernameField.setColumns(10);
         usernameField.addActionListener(this);
 
         JButton btnTake = new JButton("Take");
-        btnTake.setBounds(216, 195, 89, 23);
+        btnTake.setBounds(20, 175, 70, 23);
         btnTake.addActionListener(this);
         panel.add(btnTake);
 
         btnCancel = new JButton("Cancel");
-        btnCancel.setBounds(315, 195, 89, 23);
+        btnCancel.setBounds(110, 175, 70, 23);
         btnCancel.addActionListener(this);
         panel.add(btnCancel);
 
-        setSize(430, 264);
+        setSize(200, 250);
     }
 
     private boolean checkInput() {

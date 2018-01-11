@@ -31,4 +31,9 @@ Po uruchomieniu aplikacji-klienta należy podać w interfejsie graficznym adres 
 Następnie należy się zalogować jako dodany wcześniej użytkownik lub dodać nowego użytkownika.  
 
 
-![Login](https://github.com/MRejdych/chat/blob/master/imgs/login.png)
+![Login](https://github.com/MRejdych/chat/blob/master/imgs/login.png)  
+  
+  
+  
+  
+![Conversation](https://github.com/MRejdych/chat/blob/master/imgs/conversation.png)

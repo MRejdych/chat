@@ -20,13 +20,13 @@ import java.io.IOException;
 
 public class ChatWindow extends Window implements ActionListener, WindowStateListener, OnDataReceivedListener, AdjustmentListener {
     private static final String STYLE_SHEET =
-            ".chatV2-box { margin: 2px; }"
-                    + ".chatV2-box p { display: block; padding: 7px; margin-top: 2px; margin-bottom: 2px; word-wrap: break-word;}"
-                    + ".chatV2-msg1 { background-color: #2ea9d1; }" + ".chatV2-msg2 { background-color: #b5cece; }";
+            ".chat-box { margin: 2px; }"
+                    + ".chat-box p { display: block; padding: 7px; margin-top: 2px; margin-bottom: 2px; word-wrap: break-word;}"
+                    + ".chat-msg1 { background-color: #2ea9d1; }" + ".chat-msg2 { background-color: white; }";
     private static final String DEFAULT_HTML_FORMAT = "<style>" + STYLE_SHEET + "</style>"
-            + "<div id=content class=chatV2-box> </div>";
-    private static final String DEFAULT_FRIEND_CHAT_FORMAT = "<p class=chatV2-msg1>%s</p>";
-    private static final String DEFAULT_WE_CHAT_FORMAT = "<p class=chatV2-msg2>%s</p>";
+            + "<div id=content class=chat-box> </div>";
+    private static final String DEFAULT_FRIEND_CHAT_FORMAT = "<p class=chat-msg1>%s</p>";
+    private static final String DEFAULT_WE_CHAT_FORMAT = "<p class=chat-msg2>%s</p>";
     private JTextField inputField;
     private JTextPane dispField;
     private final UserInfo yourFriend;
@@ -39,12 +39,12 @@ public class ChatWindow extends Window implements ActionListener, WindowStateLis
         panel.setLayout(new BorderLayout(5, 5));
 
         inputField = new JTextField();
-        inputField.setToolTipText("Enter your chatV2 content then enter to send");
+        inputField.setToolTipText("Enter your chat content then enter to send");
         panel.add(inputField, BorderLayout.CENTER);
         inputField.addActionListener(this);
 
         JButton btnSend = new JButton("");
-        btnSend.setToolTipText("Press to send your chatV2 content");
+        btnSend.setToolTipText("Press to send your chat content");
         btnSend.addActionListener(this);
         panel.add(btnSend, BorderLayout.EAST);
 
