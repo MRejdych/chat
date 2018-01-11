@@ -12,4 +12,18 @@ W celu uruchomienia aplikacji system musi posiadać zainstalowany [Java Runtime 
 
 Pierwszym krokiem jest uruchomienie serwera aplikacji.  
 W tym celu należy uruchomić z poziomu IDE metodę main() klasy ChatServer.java lub uruchomić server 
-z poziomu terminala 
+z poziomu terminala wywołując komendę "./gradlew runServer --console plain" z poziomu katalogu głównego projektu.  
+
+Po uruchomieniu serwera należy wybrać jeden z dostępnych adresów ip oraz podać port, pod którym serwer ma oczekiwać połączeń.  
+
+
+![RunServer](https://github.com/MRejdych/chat/blob/master/imgs/runServer.png)  
+
+
+Następnie należy uruchomić aplikację-klienta uruchamiając z poziomu IDE metodę main() klasy ChatClient.java lub 
+uruchomić ją z poziomu terminala wywołując komendę "./gradlew runClient --console plain" z poziomu katalogu głównego projektu. 
+
+Po uruchomieniu aplikacji-klienta należy podać w interfejsie graficznym adres ip oraz port, na którym
+ nasłuchuje serwer aplikacji.  
+ 
+![RunClient](https://github.com/MRejdych/chat/blob/master/imgs/runClient.png)  
