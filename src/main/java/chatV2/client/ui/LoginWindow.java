@@ -28,37 +28,31 @@ public class LoginWindow extends ProcessingWindow implements ActionListener {
         getContentPane().setLayout(null);
 
         usernameField = new JTextField();
-        usernameField.setBounds(451, 92, 112, 20);
+        usernameField.setBounds(50, 50, 100, 20);
         usernameField.addActionListener(this);
         getContentPane().add(usernameField);
         usernameField.setColumns(10);
 
         JLabel lblUsername = new JLabel("Username:");
-        lblUsername.setBounds(384, 95, 57, 14);
+        lblUsername.setBounds(60, 30, 80, 14);
         getContentPane().add(lblUsername);
         lblUsername.requestFocus();
 
         JButton btnLogin = new JButton("Login");
-        btnLogin.setBounds(451, 161, 112, 23);
+        btnLogin.setBounds(50, 79, 100, 23);
         btnLogin.addActionListener(this);
         getContentPane().add(btnLogin);
 
         JLabel lblDontHaveAn = new JLabel("Don't have an account?");
-        lblDontHaveAn.setBounds(384, 210, 127, 14);
+        lblDontHaveAn.setBounds(30, 128, 150, 14);
         getContentPane().add(lblDontHaveAn);
 
         btnRegister = new JButton("Register");
-        btnRegister.setBounds(451, 235, 112, 23);
+        btnRegister.setBounds(50, 153, 100, 23);
         btnRegister.addActionListener(this);
         getContentPane().add(btnRegister);
 
-        JLabel lblServerAddress = new JLabel("Server address...");
-        lblServerAddress.setForeground(Color.GRAY);
-        lblServerAddress.setBounds(10, 309, 201, 14);
-        lblServerAddress.setText("Server at " + Client.getInstance().getRemoteAddress());
-        getContentPane().add(lblServerAddress);
-
-        setSize(586, 363);
+        setSize(200, 250);
     }
 
     @Override

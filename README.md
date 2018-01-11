@@ -27,3 +27,8 @@ Po uruchomieniu aplikacji-klienta należy podać w interfejsie graficznym adres 
  nasłuchuje serwer aplikacji.  
  
 ![RunClient](https://github.com/MRejdych/chat/blob/master/imgs/runClient.png)  
+
+Następnie należy się zalogować jako dodany wcześniej użytkownik lub dodać nowego użytkownika.  
+
+
+![Login](https://github.com/MRejdych/chat/blob/master/imgs/login.png)

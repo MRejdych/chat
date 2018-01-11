@@ -43,7 +43,7 @@ public final class ChatServer {
             selectedIp = scanner.nextInt();
             System.out.println("Select port under which server will be started ...");
             port = scanner.next();
-            if (isNumber(port) && (0 < selectedIp && selectedIp < count)) {
+            if (isNumber(port) && (0 <= selectedIp && selectedIp <= count)) {
                 break;
             }
             System.out.println("Entered data is invalid, try again ...");
