@@ -1,13 +1,12 @@
 package chatV2.server;
 
+import chatV2.common.data.UserInfo;
 import chatV2.common.messages.Request;
 import chatV2.common.messages.Response;
-import chatV2.common.data.UserInfo;
-import chatV2.common.transmission.SerializationUtils;
 import chatV2.common.transmission.Protocol;
+import chatV2.common.transmission.SerializationUtils;
 import chatV2.common.transmission.SocketTransmission;
 import chatV2.common.utils.StreamUtilities;
-import com.sun.istack.internal.NotNull;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -27,7 +26,7 @@ public class Worker {
         mOnAuthenticatedListener = listener;
     }
 
-    public void response(@NotNull Response result) throws IOException {
+    public void response( Response result) throws IOException {
         protocol.sendObject(result);
     }
 
@@ -68,7 +67,7 @@ public class Worker {
     }
 
     public interface OnRequestReceivedListener {
-        @NotNull
+
         Response onRequestReceived(Worker sender, Request request);
     }
 }

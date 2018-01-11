@@ -5,7 +5,6 @@ import chatV2.client.ui.ConnectionWindow;
 import chatV2.client.ui.MessageBox;
 import chatV2.client.ui.Window;
 import chatV2.common.data.UserInfo;
-import com.sun.istack.internal.NotNull;
 
 import javax.swing.*;
 import java.util.LinkedList;
@@ -78,7 +77,7 @@ public final class ChatClient {
         return existsWindow;
     }
 
-    public static ChatWindow showChatWindow(@NotNull UserInfo who) {
+    public static ChatWindow showChatWindow( UserInfo who) {
         ChatWindow chatWindow;
         for (Window window : windows) {
             if (window instanceof ChatWindow) {

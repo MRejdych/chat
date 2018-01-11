@@ -1,13 +1,14 @@
 package chatV2.server;
 
-import chatV2.common.data.*;
+import chatV2.common.data.RegisterInfo;
+import chatV2.common.data.User;
+import chatV2.common.data.UserInfo;
 import chatV2.common.messages.Message;
 import chatV2.common.messages.Request;
 import chatV2.common.messages.Response;
 import chatV2.common.utils.StreamUtilities;
 import chatV2.common.utils.Task;
 import chatV2.common.utils.Validator;
-import com.sun.istack.internal.NotNull;
 
 import java.io.Closeable;
 import java.io.IOException;
@@ -128,7 +129,7 @@ public final class Server implements Closeable, Worker.OnAuthenticatedListener {
     private class RequestHandler implements Worker.OnRequestReceivedListener {
 
         @Override
-        @NotNull
+
         public Response onRequestReceived(Worker sender, Request request) {
             Response responseObject = null;
             switch (request.getCode()) {

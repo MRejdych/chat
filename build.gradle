@@ -1,5 +1,6 @@
 apply plugin: 'java'
 apply plugin: 'idea'
+//apply plugin: 'application'
 
 repositories {
     mavenCentral()
@@ -11,4 +12,16 @@ targetCompatibility = 1.8
 dependencies {
     compile group: 'org.json', name: 'json', version: '20160810'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+}
+
+task runServer(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    main = "chatV2.server.ChatServer"
+}
+
+task runClient(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    main = "chatV2.client.ChatClient"
 }

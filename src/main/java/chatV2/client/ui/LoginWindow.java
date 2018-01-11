@@ -1,10 +1,10 @@
 package chatV2.client.ui;
 
-import chatV2.client.Client;
 import chatV2.client.ChatClient;
+import chatV2.client.Client;
+import chatV2.common.data.User;
 import chatV2.common.messages.Request;
 import chatV2.common.messages.Response;
-import chatV2.common.data.User;
 import chatV2.common.utils.Validator;
 
 import javax.swing.*;

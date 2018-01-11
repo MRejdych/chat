@@ -2,10 +2,10 @@ package chatV2.client.ui;
 
 import chatV2.client.Client;
 import chatV2.client.Client.OnDataReceivedListener;
+import chatV2.common.data.UserInfo;
 import chatV2.common.messages.Message;
 import chatV2.common.messages.Request;
 import chatV2.common.messages.Response;
-import chatV2.common.data.UserInfo;
 import chatV2.common.utils.Task;
 import org.apache.commons.lang3.StringEscapeUtils;
 

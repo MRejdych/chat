@@ -24,33 +24,33 @@ public class ConnectionWindow extends Window implements ActionListener {
         getContentPane().setLayout(null);
 
         JLabel lblNewLabel = new JLabel("Address:");
-        lblNewLabel.setBounds(384, 85, 43, 23);
+        lblNewLabel.setBounds(50, 5, 100, 40);
         getContentPane().add(lblNewLabel);
 
         ipField = new JTextField();
-        ipField.setBounds(437, 85, 99, 23);
+        ipField.setBounds(50, 35, 100, 26);
         ipField.setText("localhost");
         ipField.addActionListener(this);
         getContentPane().add(ipField);
         ipField.setColumns(10);
 
         JLabel lblPort = new JLabel("Port:");
-        lblPort.setBounds(384, 119, 43, 23);
+        lblPort.setBounds(50, 69, 100, 23);
         getContentPane().add(lblPort);
 
         portField = new JTextField();
-        portField.setBounds(437, 119, 99, 23);
+        portField.setBounds(50, 93, 100, 26);
         portField.setText("3393");
         portField.addActionListener(this);
         getContentPane().add(portField);
         portField.setColumns(10);
 
         JButton btnConnect = new JButton("Connect");
-        btnConnect.setBounds(437, 153, 99, 23);
+        btnConnect.setBounds(50, 133, 100, 23);
         btnConnect.addActionListener(this);
         getContentPane().add(btnConnect);
 
-        setSize(560, 397);
+        setSize(200, 250);
     }
 
     @Override
@@ -73,7 +73,7 @@ public class ConnectionWindow extends Window implements ActionListener {
     }
 
     public ConnectionWindow() {
-        setTitle("Welcome to Homechat");
+        setTitle("JavaChat");
     }
 
     @Override

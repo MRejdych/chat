@@ -1,14 +1,13 @@
 package chatV2.client;
 
+import chatV2.common.data.User;
 import chatV2.common.messages.Request;
 import chatV2.common.messages.Response;
-import chatV2.common.data.User;
-import chatV2.common.transmission.SerializationUtils;
 import chatV2.common.transmission.Protocol;
+import chatV2.common.transmission.SerializationUtils;
 import chatV2.common.transmission.SocketTransmission;
 import chatV2.common.utils.StreamUtilities;
 import chatV2.common.utils.Task;
-import com.sun.istack.internal.NotNull;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -127,7 +126,7 @@ public final class Client {
     }
 
     public interface OnDataReceivedListener {
-        boolean onDataReceived(Client sender, @NotNull Response receivedObject);
+        boolean onDataReceived(Client sender,  Response receivedObject);
     }
 
     public interface OnConnectionHasProblemListener {

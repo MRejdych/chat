@@ -1,7 +1,5 @@
 package chatV2.common.transmission;
 
-import com.sun.istack.internal.NotNull;
-
 import java.io.IOException;
 import java.util.Optional;
 
@@ -10,7 +8,7 @@ public final class Protocol {
     private SerializationUtils serializationUtils;
     private SocketTransmission transmission;
 
-    public Protocol(@NotNull SerializationUtils serializationUtils, @NotNull SocketTransmission transmission) {
+    public Protocol( SerializationUtils serializationUtils,  SocketTransmission transmission) {
         this.serializationUtils = serializationUtils;
         this.transmission = transmission;
     }

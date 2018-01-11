@@ -2,7 +2,6 @@ package chatV2.server;
 
 import chatV2.common.data.UserInfo;
 import chatV2.common.utils.StreamUtilities;
-import com.sun.istack.internal.NotNull;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,7 +40,7 @@ public final class UserManager {
         }
     }
 
-    public UserInfo getUserInfo(@NotNull String username) {
+    public UserInfo getUserInfo( String username) {
         try {
             JSONTokener jsonTokener = new JSONTokener(readAllString());
             JSONArray jsonArray = new JSONArray(jsonTokener);
@@ -62,7 +61,7 @@ public final class UserManager {
         return null;
     }
 
-    @NotNull
+
     public List<UserInfo> getAllUsersInfos() {
         List<UserInfo> users = new ArrayList<>();
         try {
@@ -140,7 +139,7 @@ public final class UserManager {
         return false;
     }
 
-    public void addUser(@NotNull String username) {
+    public void addUser( String username) {
         Random rand = new Random(new Date().getTime());
 
         if (checkExistsUser(username))
