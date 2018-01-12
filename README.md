@@ -55,16 +55,26 @@ rolę serwera w celu przechowywania danych o użytkownikach.
 [Gradle Build Tool](https://gradle.org/) - narzędzie wykorzystane w celu automatyzacji procesu budowania aplikacji.  
 
 ## List wymagań odnośnie aplikacji:
+### Wymagania funkcjonalne:
 - Możliwość dodawania unikalnych użytkowników.
+- Baza dodanych użytkowników nie jest tracona podczas ponownego uruchomienia systemu.
 - Użytkownik może wysłać wiadomość do innego użytkownika aplikacji.
 - Użytkownik  po zalogowaniu się może zobaczyć listę pozostałych użytkowników.
 - Możliwość pracy z wieloma klientami czatu jednocześnie.
-- Możliwość uruchomienia aplikacji na systemie Linux oraz Windows.
 - Klienci czatu mogą łączyć się z serwerem uruchomionym na innej maszynie.
+- W dowolonym momencie liczba klientów może wzrosnąć lub zmaleć, co nie powinno zaburzyć poprawnego funkcjonowania systemu.
+### Wymagania niefunkcjonalne:
+- Aplikacja klienca musi posiadać łatwy w obsłudze interfejs graficzny.
+- Możliwość uruchomienia aplikacji na systemie Linux oraz Windows.
+
 
 ## Główni aktorzy:
 - Użytkownik końcowy wchodzący w interakcję poprzez interfejs graficzny z aplikacją pełniącą rolę klienta.
 - Administrator serwera wchodzący z nim w interakcję poprzez wiersz poleceń.   
+
+## Przypadki użycia:
+### Use case diagram
+![use-case](https://github.com/MRejdych/chat/blob/master/imgs/use-case.png)
 
 ## Architektura systemu:
 
