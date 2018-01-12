@@ -70,6 +70,10 @@ rolę serwera w celu przechowywania danych o użytkownikach.
 
 System został zaimplementowany w oparciu o architekturę klient-serwer.  
 
+![Client-Server](https://github.com/MRejdych/chat/blob/master/imgs/client-server.png)  
+
+
+
 
 
 
