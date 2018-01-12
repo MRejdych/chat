@@ -74,13 +74,18 @@ rolę serwera w celu przechowywania danych o użytkownikach.
 
 ## Przypadki użycia:
 ### Use case diagram
-![use-case](https://github.com/MRejdych/chat/blob/master/imgs/use-case.png)
+<p align="center">
+    <img src="https://github.com/MRejdych/chat/blob/master/imgs/use-case.png?raw=true"" />
+</p>  
 
-## Architektura systemu:
+
+## Architektura systemu:  
 
 System został zaimplementowany w oparciu o architekturę klient-serwer.  
-
-![Client-Server](https://github.com/MRejdych/chat/blob/master/imgs/client-server.png)  
+  
+<p align="center">
+  <img src="https://github.com/MRejdych/chat/blob/master/imgs/client-server.png?raw=true"/>
+</p>
 
 
 
