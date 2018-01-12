@@ -11,31 +11,39 @@ z poziomu terminala wywołując komendę "./gradlew runServer --console plain" z
 
 Po uruchomieniu serwera należy wybrać jeden z dostępnych adresów ip oraz podać port, pod którym serwer ma oczekiwać połączeń.  
 
-
-![RunServer](https://github.com/MRejdych/chat/blob/master/imgs/runServer.png)  
-
+<p align="center">
+    <img src="https://github.com/MRejdych/chat/blob/master/imgs/runServer.png?raw=true"" />
+</p>  
 
 Następnie należy uruchomić aplikację-klienta uruchamiając z poziomu IDE metodę main() klasy ChatClient.java lub 
 uruchomić ją z poziomu terminala wywołując komendę "./gradlew runClient --console plain" z poziomu katalogu głównego projektu. 
 
 Po uruchomieniu aplikacji-klienta należy podać w interfejsie graficznym adres ip oraz port, na którym
  nasłuchuje serwer aplikacji.  
- 
-![RunClient](https://github.com/MRejdych/chat/blob/master/imgs/runClient.png)  
+   
+<p align="center">
+    <img src="https://github.com/MRejdych/chat/blob/master/imgs/runClient.png?raw=true"" />
+</p>  
 
 Następnie należy się zalogować jako dodany wcześniej użytkownik lub dodać nowego użytkownika.    
 
-
-![Login](https://github.com/MRejdych/chat/blob/master/imgs/login.png)  
+<p align="center">
+    <img src="https://github.com/MRejdych/chat/blob/master/imgs/login.png?raw=true"" />
+</p>  
 
 Nazwa użytkownika powinna składać się z małych lub dużych liter oraz cyfr i mieć długość od 3 do 15 znaków.  
   
-![Registration](https://github.com/MRejdych/chat/blob/master/imgs/registration.png)    
-  
+<p align="center">
+    <img src="https://github.com/MRejdych/chat/blob/master/imgs/registration.png?raw=true"" />
+</p>  
+    
 Po zalogowaniu się do aplikacji zobaczymy okno, w którym widnieje lista zarejestrowanych użytkowników.  
 Aby rozpocząć konwersację z aktualnie zalogowanym użytkownikiem wystarczy dwukrotnie kliknąć jego nazwę.  
   
-![Conversation](https://github.com/MRejdych/chat/blob/master/imgs/conversation.png)
+
+<p align="center">
+    <img src="https://github.com/MRejdych/chat/blob/master/imgs/conversation.png?raw=true"" />
+</p>    
 
 ## Cel projektu:
 Projekt ma na celu zademonstrowanie przykładowego zastosowania języka programowania Java w implementowaniu systemów rozproszonych.  
