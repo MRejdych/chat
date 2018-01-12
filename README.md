@@ -4,7 +4,7 @@
 ### Wymagania systemowe
 W celu uruchomienia aplikacji system musi posiadać zainstalowane  [Java Runtime Environment 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) lub nowsze.
 
-###Uruchomienie aplikacji
+### Uruchomienie aplikacji
 Pierwszym krokiem jest uruchomienie serwera aplikacji.  
 W tym celu należy uruchomić z poziomu IDE metodę main() klasy ChatServer.java lub uruchomić server 
 z poziomu terminala wywołując komendę "./gradlew runServer --console plain" z poziomu katalogu głównego projektu.  
@@ -53,6 +53,23 @@ realizujących powszechne zadania wykonywane w Javie w celu uproszczenia procesu
 rolę serwera w celu przechowywania danych o użytkownikach.  
 
 [Gradle Build Tool](https://gradle.org/) - narzędzie wykorzystane w celu automatyzacji procesu budowania aplikacji.  
+
+## List wymagań odnośnie aplikacji:
+- Możliwość dodawania unikalnych użytkowników.
+- Użytkownik może wysłać wiadomość do innego użytkownika aplikacji.
+- Użytkownik  po zalogowaniu się może zobaczyć listę pozostałych użytkowników.
+- Możliwość pracy z wieloma klientami czatu jednocześnie.
+- Możliwość uruchomienia aplikacji na systemie Linux oraz Windows.
+- Klienci czatu mogą łączyć się z serwerem uruchomionym na innej maszynie.
+
+## Główni aktorzy:
+- Użytkownik końcowy wchodzący w interakcję poprzez interfejs graficzny z aplikacją pełniącą rolę klienta.
+- Administrator serwera wchodzący z nim w interakcję poprzez wiersz poleceń.   
+
+## Architektura systemu:
+
+System został zaimplementowany w oparciu o architekturę klient-serwer.  
+
 
 
 
