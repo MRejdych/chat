@@ -2,7 +2,7 @@
 
 ## Instrukcja użytkownika:
 ### Wymagania systemowe
-W celu uruchomienia aplikacji system musi posiadać zainstalowane  [Java Runtime Environment 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html) lub nowsze.
+W celu uruchomienia aplikacji system musi posiadać zainstalowane  [Java Development Kit 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) lub nowsze.
 
 ### Uruchomienie aplikacji
 Pierwszym krokiem jest uruchomienie serwera aplikacji.  
@@ -60,7 +60,7 @@ realizujących powszechne zadania wykonywane w Javie w celu uproszczenia procesu
 [JSON](http://json.org/) - lekki format wymiany danych komputerowych wykorzystany w aplikacji pełniącej 
 rolę serwera w celu przechowywania danych o użytkownikach.  
 
-[Gradle Build Tool](https://gradle.org/) - narzędzie wykorzystane w celu automatyzacji procesu budowania aplikacji.  
+[Gradle Build Tool](https://gradle.org/) - narzędzie wykorzystane w celu automatyzacji procesu budowania i uruchamiania aplikacji.  
 
 ## List wymagań odnośnie aplikacji:
 ### Wymagania funkcjonalne:
@@ -93,7 +93,9 @@ System został zaimplementowany w oparciu o architekturę klient-serwer.
   
 <p align="center">
   <img src="https://github.com/MRejdych/chat/blob/master/imgs/client-server.png?raw=true"/>
-</p>
+</p>  
+
+
 
 
 
