@@ -28,12 +28,17 @@ Po uruchomieniu aplikacji-klienta należy podać w interfejsie graficznym adres 
  
 ![RunClient](https://github.com/MRejdych/chat/blob/master/imgs/runClient.png)  
 
-Następnie należy się zalogować jako dodany wcześniej użytkownik lub dodać nowego użytkownika.  
+Następnie należy się zalogować jako dodany wcześniej użytkownik lub dodać nowego użytkownika. 
+Nazwa użytkownika powinna składać się z małych lub dużych liter oraz cyfr i mieć długość od 3 do 15 znaków.   
 
 
 ![Login](https://github.com/MRejdych/chat/blob/master/imgs/login.png)  
   
+![Registration](https://github.com/MRejdych/chat/blob/master/imgs/registration.png)    
   
-  
+Po zalogowaniu się do aplikacji zobaczymy okno, w którym widnieje lista zarejestrowanych użytkowników.  
+Aby rozpocząć konwersację z aktualnie zalogowanym użytkownikiem wystarczy kliknąć jego nazwę.  
   
 ![Conversation](https://github.com/MRejdych/chat/blob/master/imgs/conversation.png)
+
+
