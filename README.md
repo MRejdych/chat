@@ -81,7 +81,7 @@ rolę serwera w celu przechowywania danych o użytkownikach.
 - Administrator serwera wchodzący z nim w interakcję poprzez wiersz poleceń.   
 
 ## Przypadki użycia:
-### Use case diagram
+### Diagram przypadków użycia
 <p align="center">
     <img src="https://github.com/MRejdych/chat/blob/master/imgs/use-case.png?raw=true"" />
 </p>  
@@ -94,6 +94,12 @@ System został zaimplementowany w oparciu o architekturę klient-serwer.
 <p align="center">
   <img src="https://github.com/MRejdych/chat/blob/master/imgs/client-server.png?raw=true"/>
 </p>  
+
+
+## Bibliografia
+
+- Java. Podstawy. Wydanie X, Cay. S. Horstmann, ISBN: 978-83-283-2480-0 
+- Java. Techniki Zaawansowane. Wydanie X, Cay. S. Horstmann, ISBN: 978-83-283-3479-3  
 
 
 
