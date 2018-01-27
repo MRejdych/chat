@@ -90,6 +90,10 @@ rolę serwera w celu przechowywania danych o użytkownikach.
 ## Architektura systemu:  
 
 System został zaimplementowany w oparciu o architekturę klient-serwer.  
+Serwer nasłuchuje na wybranym porcie żądania połączenia ze strony klienta.  
+Po nadejściu takiego żądania Serwer oraz Klient tworzą obiekty typu Socket komunikujące się ze sobą poprzez 
+przypisany im port wybrany z puli dostępnych portów.  
+Po połączeniu się z klientem serwer nasłuchuje żądania połączenia od kolejnego klienta na pierwotnie wybranym porcie.
   
 <p align="center">
   <img src="https://github.com/MRejdych/chat/blob/master/imgs/client-server.png?raw=true"/>
